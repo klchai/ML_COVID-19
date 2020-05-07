@@ -16,7 +16,8 @@ DATA_URL = dict(
     meta_hospitaliere_new = ("https://www.data.gouv.fr/fr/datasets/r/4900f53f-750d-4c5a-9df7-2d4ceb018acf","meta_hospitaliere_new.csv"),
     meta_hospitaliere_classe_age = ("https://www.data.gouv.fr/fr/datasets/r/929dff1b-b07c-4637-9690-fb7219ad3eb8","meta_hospitaliere_classe_age.csv"),
     meta_hospitaliere_etablissements = ("https://www.data.gouv.fr/fr/datasets/r/415c852b-7898-40f8-8f71-b9171faf4516","meta_hospitaliere_etablissements.csv"),
-    meta_tests = ("https://www.data.gouv.fr/fr/datasets/r/971c5cbd-cd80-4492-b2b3-c3deff8c1f5e","meta_tests.csv")
+    meta_tests = ("https://www.data.gouv.fr/fr/datasets/r/971c5cbd-cd80-4492-b2b3-c3deff8c1f5e","meta_tests.csv"),
+    tranches_age = ("https://www.data.gouv.fr/fr/datasets/r/db378f2a-83a1-40fd-a16c-06c4c8c3535d","age.csv")
 )
 
 def download(url, path):
@@ -96,5 +97,10 @@ def load_meta_hospitaliere_etablissements():
 
 def load_meta_tests():
     url,fichier=DATA_URL["meta_tests"]
+    data = load_data(url,fichier)
+    return data
+
+def load_tranches_age():
+    url,fichier=DATA_URL["tranches_age"]
     data = load_data(url,fichier)
     return data
