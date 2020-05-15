@@ -40,10 +40,14 @@ def load_italy():
     res = pd.DataFrame()
 #     days = confirmed[1]
 #     print(days)
-    res["time"]=list(range(114))
+#     res["time"]=list(range(114))
     res["infected"]=I
     res["recovered"]=R
     res["death"]=D
+    
+    null_data = [0,1,2,3,4,5,6,7,8]
+    res = res.drop(null_data)
+    res = res.reset_index(drop=True)
     
     return res
     
