@@ -37,7 +37,7 @@ class SIRModel():
         S,I,R=ret.T
         return S,I,R
         
-    def plotsir(self, t, S, I, R, df):
+    def plotsir(self, t, S, I, R):
         f, ax = plt.subplots(1,1)
         ax.plot(t, S, 'b', alpha=0.7, linewidth=2, label='Susceptible')
         ax.plot(t, I, 'y', alpha=0.7, linewidth=2, label='Infected')
