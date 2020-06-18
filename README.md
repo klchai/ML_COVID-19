@@ -21,4 +21,13 @@ Dans le fichier ML_COVID-19.ipynb, vous pouvez trouver:
 Path: `model/sir.ipynb`
 1. Un model SIR encapsulé
 2. Modèle SIR fitted sur les données réelles
-3. SEIR (en cours)
+
+### SEIR Model
+Path: `model/seir.ipynb`
+1. Un model SEIR encapsulé
+2. Modèle SEIR fitted sur les données réelles
+
+### SEIRD Model
+Path: `model/seird.ipynb`
+1. Un model SEIRD encapsulé
+2. Modèle SEIRD fitted sur les données réelles
