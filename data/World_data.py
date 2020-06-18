@@ -88,4 +88,28 @@ def load_italy():
     null_data = [0,1,2,3,4,5,6,7,8]
     res = res.drop(null_data)
     return res
-    
+
+def load_france():
+    full_grouped = pd.read_csv('./data/world/COVID-19-time-series-clean-complete.csv', parse_dates=['Date'])
+    fr = full_grouped[full_grouped['Country/Region'] == 'France']
+    res = fr.drop(['Unnamed: 0'],axis = 1)
+    res = res.reset_index(drop=True)
+    null_data = [0,1]
+    res = res.drop(null_data)
+    return res
+
+def load_canada():
+    full_grouped = pd.read_csv('./data/world/COVID-19-time-series-clean-complete.csv', parse_dates=['Date'])
+    can = full_grouped[full_grouped['Country/Region'] == 'Canada']
+    res = can.drop(['Unnamed: 0'],axis = 1)
+    res = res.reset_index(drop=True)
+    null_data = [0,1,2,3]
+    res = res.drop(null_data)
+    return res
+
+def load_china():
+    full_grouped = pd.read_csv('./data/world/COVID-19-time-series-clean-complete.csv', parse_dates=['Date'])
+    can = full_grouped[full_grouped['Country/Region'] == 'China']
+    res = can.drop(['Unnamed: 0'],axis = 1)
+    res = res.reset_index(drop=True)
+    return res

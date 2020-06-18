@@ -3,7 +3,7 @@
 import numpy as np
 
 from .base import BaseModel
-
+from scipy.integrate import odeint
 
 class SEIRModel(BaseModel):
     """
