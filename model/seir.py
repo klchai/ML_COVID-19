@@ -6,12 +6,7 @@ from .base import BaseModel
 from scipy.integrate import odeint
 
 class SEIRModel(BaseModel):
-    """
-    Blabla sur SEIR model
-    
-    TODO : equations
 
-    """
     def __init__(self, beta=0.1, delta=0.1, gamma=0.1):
         super().__init__()
         self.beta_ = beta
