@@ -14,8 +14,7 @@ Dans le fichier ML_COVID-19.ipynb, vous pouvez trouver:
   - Nombre de décès à Paris
   - Nombre cumulé de services hospitaliers ayant déclaré au moins un cas - sur la carte de France
   - Proportion de tests positifs dans la région parisienne
-3. Le modèle SIR simple
-  
+3. Les modèle SIR, SEIR et SEIRD
   
 ### SIR Model
 Path: `model/sir.ipynb`
@@ -31,3 +30,12 @@ Path: `model/seir.ipynb`
 Path: `model/seird.ipynb`
 1. Un model SEIRD encapsulé
 2. Modèle SEIRD fitted sur les données réelles
+
+### World_data
+World_data provides following fonctions:
+1. clean()
+2. load_france()
+3. load_UK()
+4. load_italy()
+5. load_china()
+6. load_canada()
