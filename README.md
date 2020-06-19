@@ -33,9 +33,9 @@ Path: `model/seird.ipynb`
 
 ### World_data
 World_data provides following fonctions:
-1. clean()
-2. load_france()
-3. load_UK()
-4. load_italy()
-5. load_china()
-6. load_canada()
+1. clean(): data cleaning for 3 csv files from CSSE Jhons Hopkins and export an new CSV
+2. load_france(): return DataFrame of France
+3. load_UK(): return DataFrame of United Kingdom
+4. load_italy(): return DataFrame of Italy
+5. load_china(): return DataFrame of China
+6. load_canada(): return DataFrame of Canada
