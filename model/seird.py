@@ -6,12 +6,6 @@ from .base import BaseModel
 
 
 class SEIRDModel(BaseModel):
-    """
-    Blabla sur SEIRD model
-    
-    TODO : equations
-
-    """
 
     def __init__(self, alpha:float=0.01, beta:float=0.1, delta:float=0.1, gamma:float=0.1, rho:float=0.5):
         super().__init__()
